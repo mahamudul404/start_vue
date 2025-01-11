@@ -1,8 +1,7 @@
 <script setup>
 import { people } from "./data/data";
 
-const number = 14;
-
+const date = new Date();
 </script>
 
 <template>
@@ -14,9 +13,7 @@ const number = 14;
           <h1>{{ person.name }}</h1>
           <h2>{{ person.designation }}</h2>
           <p>{{ person.location }}</p>
-
-          <p>{{ number }} is {{ number % 2 == 0 ? 'even' : 'odd' }}</p>
-          
+          <p>{{ date }}</p>
         </div>
       </div>
     </div>
